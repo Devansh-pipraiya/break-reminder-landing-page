@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Landing Page</title>
+    <title>Break Reminder</title>
 </head>
 <body>
     <div class="header">
@@ -21,7 +21,8 @@
     <div class="section-1">
         <div class="hero-main-txt">Take a Break. Right Now.
             <div class="hero-second-txt">A break reminder that interrupts you at the worst possible moment.</div>
-            <button class="signup" id="interruptme">Interrupt me</button></div>
+            <button class="signup" id="interruptme">Interrupt me</button>
+        </div>
         <div class="placeholder"><img src="./images/Break-Reminder-hero.png"></div>
     </div>
     <div class="section-2 random-info" id="steps">Engineered to Interrupt You</div>
@@ -46,7 +47,7 @@
     <div class="section-3">
         <div class="quote">"That feeling of being 'in the zone'? That's your brain tricking you into working. We're here to save you from
          yourself."
-        <div class="author"> –BreakReminder</div></div>
+        <div class="author">  —BreakReminder</div></div>
     </div>
     <div class="section-4" id="cta">
         <div class="call-to-action">
@@ -59,5 +60,28 @@
     <div class="footer">
         Break Reminder &copy; 2026
     </div>
+
+        
+    <script> /* This js code is not written by me the interactive buttons are from tutorials and AI suggestion, adapted for this project */
+        const btn = document.getElementById('interruptme');
+
+        btn.addEventListener('mouseover', () => {
+        const parent = btn.parentElement;
+        const maxX = parent.clientWidth - btn.clientWidth;
+        const maxY = parent.clientHeight - btn.clientHeight;
+
+        const randX = Math.floor(Math.random() * maxX);
+        const randY = Math.floor(Math.random() * maxY);
+        btn.style.position = 'absolute';
+        btn.style.left = randX + 'px';
+        btn.style.top = randY + 'px';
+        });
+
+        const startBtn = document.getElementById('startbreak');
+        startBtn.addEventListener('click', () => {
+            alert("🎉 Break started… Go and scroll Insta for just 5 minutes 😎📲 ");
+            alert("📝! Remember: Don't get distracted by work 🏢");
+        });
+    </script>
 </body>
 </html>

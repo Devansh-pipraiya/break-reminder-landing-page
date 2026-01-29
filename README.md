@@ -1,6 +1,6 @@
 # 🚀 Landing Page
 
- A static landing page built with **HTML**, **CSS**, & **Flexbox**, focusing on **section layout, alignment, and overall visual clarity**.
+ ### A static landing page built with **HTML**, **CSS**, & **Flexbox**, focusing on **section layout, alignment, and overall visual clarity**.
 
 ## 📌 Project Summary
 
